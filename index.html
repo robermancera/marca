@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <style>
+    hr1{ 
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,200);
+    height:         5vh;
+    width:          1px;       
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.white{
+    color:white;
+  }
+  hr.white{
+    border-top: 1px solid white;
+  }
+  .navbar-toggler-icon{
+    color:black;
+  }
+    .hoover:hover {
+      color: red;
+    }
+
+    #boton:hover {
+      color: white;
+      background-color: black;
+    }
+
+    #boton2 {
+      color: red;
+    }
+
+    #boton2:hover {
+      color: white;
+      background-color: black;
+    }
+
+    #navbarDropdown,
+    #p {
+      color: white;
+      font-weight: bold;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    #color666 {
+      background-color: #eeeeee;
+    }
+
+    .imagen {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    li,
+    ul {
+      list-style: none;
+    }
+
+    .huge {
+      margin: 0 10px 0 0;
+    }
+
+    .little {
+      width: 33.333%;
+      float: right;
+      clear: right;
+    }
+
+    .smn {
+      margin-left: 15px;
+    }
+
+    #none{
+      display: none;
+    }
+
+
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Marca</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <img src="https://e00-marca.uecdn.es/assets/v16/img/cuidateplus.svg" width="40" height="38"><span
+          class="hoover">CuidatePlus</span>
+      </div>
+      <div class="col-md">
+        <img src="https://e00-marca.uecdn.es/assets/v16/img/trending.svg" width="40" height="38"><span class="hoover">Lo
+          + trending</span>
+      </div>
+      <div class="col-md">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Marca.svg/560px-Marca.svg.png" width="217"
+          height="60">
+      </div>
+      <div class="dropdown col-md">
+        <button class="btn btn-outline-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png"
+            width="34" height="24">
+          MX
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button"><img
+              src="https://www.comprarbanderas.es/images/banderas/400/1-espana_400px.jpg" width="34" height="24">ES
+            (España)</button>
+          <button class="dropdown-item" type="button"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width="34"
+              height="24">US (Estados Unidos)</button>
+          <button class="dropdown-item" type="button"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" width="34" height="24">CO
+            (Colombia)</button>
+          <button class="dropdown-item" type="button"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png"
+              width="34" height="24">AR (Argentina)</button>
+        </div>
+      </div>
+      <div class="col-md">
+        <button type="button" id="boton" class="btn btn-danger">Suscribete</button>
+      </div>
+      <div class="col-md">
+        <button type="button" id="boton2" class="btn btn-light">Iniciar Sesion</button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Fútbol
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Fútbol Internacional
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Motor
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Otros Deportes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" id="p" href="#">Mas + <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar en marca.com" aria-label="Search">
+        <span>
+          <a href="#"><img
+              src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-b-squeda-by-vexels.png"
+              width="32" height="32"></a>
+        </span>
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>
+  <div class="container" id="color666">
+    <div class="row no-gutters">
+      <div class="col-md-12">
+        <span><a title="Club Ámerica" href="#"><img
+              src="https://www.clubamerica.com.mx/portal/wp-content/themes/cfamerica/img/header/ClubAmericaLogo.png"
+              width="48" height="40"></a></span>
+        <span><a title="Club Atlas" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/en/8/8d/Club_Atlas_de_Guadalajara_logo.svg" width="48"
+              height="40"></a></span>
+        <span><a title="Atletico San Luis" href="#"><img
+              src="https://atleticodesanluis.mx/assets/images/soccer/logo.png" width="48" height="40"></a></span>
+        <span><a title="Cruz Azul" href="#"><img src="https://img.webme.com/pic/e/enamoradosdecruzazul/cruzazul.gif"
+              width="48" height="40"></a></span>
+        <span><a title="Guadalajara" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Escudo_chivas.png" width="48"
+              height="40"></a></span>
+        <span><a title="Juárez" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/en/f/f7/Bravos_de_Ciudad_Ju%C3%A1rez_Logo.png" width="48"
+              height="40"></a></span>
+        <span><a title="León" href="#"><img src="https://seeklogo.com/images/L/leon-fc-logo-AC0DBFC7BD-seeklogo.com.png"
+              width="48" height="40"></a></span>
+        <span><a title="Monarcas Morelia" href="#"><img
+              src="https://seeklogo.com/images/M/Monarcas_Morelia-logo-73F9E3932E-seeklogo.com.png" width="48"
+              height="40"></a></span>
+        <span><a title="Monterrey" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/84/Club_Monterrey.png" width="48"
+              height="40"></a></span>
+        <span><a title="Necaxca" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Club_Necaxa_2.svg/622px-Club_Necaxa_2.svg.png"
+              width="48" height="40"></a></span>
+        <span><a title="Pachuca" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/CFP-MXOld.png"
+              width="48" height="40"></a></span>
+        <span><a title="Puebla" href="#"><img
+              src="http://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/4246.png" width="48"
+              height="40"></a></span>
+        <span><a title="Pumas" href="#"><img src="https://seeklogo.com/images/P/Pumas-logo-9779FE8BEA-seeklogo.com.png"
+              width="48" height="40"></a></span>
+        <span><a title="Querétaro" href="#"><img
+              src="https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos/3106/3106.png" width="48"
+              height="40"></a></span>
+        <span><a title="Santos Laguna" href="#"><img
+              src="https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos/15/15.png" width="48"
+              height="40"></a></span>
+        <span><a title="Tigres" href="#"><img
+              src="https://seeklogo.com/images/T/tigres-logo-45F1D43465-seeklogo.com.png" width="48"
+              height="40"></a></span>
+        <span><a title="Club Tijuana" href="#"><img src="https://cdnb.20m.es/sites/30/2016/06/DLClub_Tijuana_logo.jpg"
+              width="48" height="40"></a></span>
+        <span><a title="Toluca" href="#"><img
+              src="https://seeklogo.com/images/T/Toluca-logo-68DAF0174D-seeklogo.com.png" width="48"
+              height="40"></a></span>
+        <span><a title="Veracruz" href="#"><img
+              src="https://seeklogo.com/images/T/Tiburones_Rojos_de_Veracruz-logo-9DE72D6BD8-seeklogo.com.png"
+              width="48" height="40"></a></span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <img class="imagen" src="http://www.tomateros.com.mx/wp-content/uploads/2016/08/TOMATEROS_770x220.gif" alt="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <b>Agenda</b>
+      </div>
+      <div class="col-md">
+        <b class="text-white bg-danger">En directo</b>
+        <span id="color666">Todas las noticias <b>Ultima hora</b></span>
+      </div>
+      <div class="col-md">
+        <b class="text-white bg-danger">Lo mejor del día</b>
+        <span id="color666">Agenda <b>Jueves 23</b></span>
+      </div>
+      <div class="col-md">
+        <aside>
+          <p class="text-secondary">Ver más directos</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <a href="#"><img class="bg-secondary"
+            src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692898760416.jpg" width="650"
+            height="366"></a>
+      </div>
+      <hr>
+      <div class="col-md-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692916685059.jpg"
+                  width="170" height="79"></a>
+            </div>
+            <div class="col-md-6">
+              <div><b class="text-primary">America</b></div>
+              <div><b>Bruno Valdez no viaja a Juárez para estar listo de cara al Cláscio Nacional</b></div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692967976929.jpg"
+                  width="170" height="79"></a>
+            </div>
+            <div class="col-md-6">
+              <div><b class="text-primary">Bears 31-15 Redskins</b></div>
+              <div><b>La defensa de los Bears aplasta a los Redskins</b></div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692965849202.jpg"
+                  width="170" height="79"></a>
+            </div>
+            <div class="col-md-6">
+              <div><b class="text-primary">Miguel Herrera calienta el clasico</b></div>
+              <div><b>Tomas no es un fuera de serie como entrenador</b></div>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        <span class="smn"><b>Es noticia:</b></span>
+        <span class="smn">Premio The Best FIFA</span>
+        <span class="smn">Jurgen Klop</span>
+        <span class="smn">Premio Puskas </span>
+        <span class="smn">FIFAFIFPro World XI</span>
+        <span class="smn">Emiliano Sala</span>
+        <span class="smn">Premios Emys</span>
+        <span class="smn">Otoño</span>
+        <span class="smn">Ultimas noticias</span>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+    <div class="col-md">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692997035331.jpg" width="140" height="79"></a>
+            </div>
+            <div class="col-md-6">
+                <div><b class="text-secondary">Chivas</b></div>
+                <div><b>Oribe Peralta: "Si me toca anotarle al America no creo que lo festeje"</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15693028245828.jpg" width="140" height="79"></a>
+                  </div>
+                  <div class="col-md-6">
+                      <div><b class="text-secondary">Liga MX</b></div>
+                      <div><b>Cardozo: "Perder un Clasico desestabiliza a cualquier tecnico</b></div>
+                  </div>
+                </div>
+            </div>
+      </div>
+      <div class="col-md">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692997035331.jpg" width="140" height="79"></a>
+                  </div>
+                  <div class="col-md-6">
+                      <div><b class="text-secondary">Chivas</b></div>
+                      <div><b>Oribe Peralta: "Si me toca anotarle al America no creo que lo festeje"</b></div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-md">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <a href="#"><img src="https://i.ytimg.com/vi/Oy81Sv_DB9Y/hqdefault.jpg" width="310" height="174"></a>
+                      <span><div><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, praesentium!</b></div></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <a href="#"><img src="https://pbs.twimg.com/media/EDd1yq_X4AE4wzk.jpg" width="310" height="174"></a>
+                          <span><div><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, modi?</b></div></span>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md">
+                    <div class="container">
+                      <div class="row" id="none">
+                          <div class="col-md-6">
+                              <a href="#"><img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/09/24/15692997035331.jpg" width="140" height="79"></a>
+                          </div>
+                          <div class="col-md-6">
+                              <div><b class="text-secondary">Chivas</b></div>
+                              <div><b>Oribe Peralta: "Si me toca anotarle al America no creo que lo festeje"</b></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    </div>
+  </div>
+
+  <div class="card bg-dark">
+      <div class="text-center text-white" style="margin-top:10px">
+        <h6>Otras webs de Unidad Editorial</h6>
+        <hr class="white">
+      </div>
+      <div class="container"style="margin-top:5px">
+        <div class="row">
+          <div class="col-12 col-xl-3 text-white">
+            <ul>
+                <p>Marca</p>
+                <li><a class="text-white" href="#">App Marca</a></li>
+                <li><a class="text-white" href="#">Apuestas Deportivas</a></li>
+                <li><a class="text-white" href="#">Clasificación LaLiga</a></li>
+                <li><a class="text-white" href="#">Calendario LaLiga</a></li>
+                <li><a class="text-white" href="#">Hemeroteca Marca</a></li>
+                <li><a class="text-white" href="#">Marca eSports</a></li>
+                <li><a class="text-white" href="#">Marca Madrid</a></li>
+                <li><a class="text-white" href="#">Marca en Orbyt</a></li>
+                <li><a class="text-white" href="#">Zona Marca</a></li>
+              </ul>
+            </div>
+          <div class="col-12 col-xl-3 text-white">
+              <ul>
+                  <p>Ocio y Moda</p>
+                  <li><a class="text-white" href="#">Tiramillas</a></li>
+                  <li><a class="text-white" href="#">Moda-Telva</a></li>
+                  <li><a class="text-white" href="#">BUHO Magazine</a></li>
+                  <li><a class="text-white" href="#">Traductor</a></li>
+                  <li><a class="text-white" href="#">Programación TV</a></li>
+                  <li><a class="text-white" href="#">Marca Entradas</a></li>
+                  <li><a class="text-white" href="#">Mi bebé y yo</a></li>
+                </ul>
+            </div>
+          <div class="col-12 col-xl-3 text-white">
+              <ul>
+                  <p>Unidad Editorial</p>
+                  <li><a class="text-white" href="#">El Mundo</a></li>
+                  <li><a class="text-white" href="#">Expansión</a></li>
+                  <li><a class="text-white" href="#">CuídatePlus</a></li>
+                  <li><a class="text-white" href="#">Diario Médico</a></li>
+                  <li><a class="text-white" href="#">Correo Farmacéutico</a></li>
+                  <li><a class="text-white" href="#">Sucripción Marca</a></li>
+                  <li><a class="text-white" href="#">Suscripción El Mundo</a></li>
+                </ul>
+            </div>
+          <div class="col-12 col-xl-3 text-white">
+              <ul>
+                  <p>Formación y Empleo</p>
+                  <li><a class="text-white" href="#">Escuela Unidad Editorial</a></li>
+                  <li><a class="text-white" href="#">Unidad Editorial</a></li>
+                  <li><a class="text-white" href="#">Expansión y Empleo</a></li>
+                </ul>
+            </div>
+        </div>
+      <div>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-12 col-xl-12 text-center" style="margin-top:5px">
+        <p>© Agosto 2018 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados. </p>
+    </div>
+    
+    <div class="col-12 mx-auto">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">  
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Términos y condiciones de uso</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Política de privacidad</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Política de cookies</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Certificado por OJD</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Publicidad</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Nuestro equipo</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+          <div class="col-12 col-xl-12 text-center" style="margin-top:1px">
+              <a href="https://www.youtube.com/watch?v=pKwQlm-wldA">Venta de contenidos</a>
+          </div>
+          <div class="col-12 col-xl-12 text-center" style="margin-top:30px">
+              <a><strong>Síguenos en</strong></a>
+          </div>
+          <div class=" text-center" style="margin-top:30px">
+              <a href="https://www.youtube.com/watch?v=uAOR6ib95kQ"><img class="img-fluid" src="https://www.wrcnbc.org/wp/wp-content/uploads/2018/11/facebook-icon-vector-png-17.jpg" alt="Image" style="width:70px;height:70;">
+              <a href="https://www.youtube.com/watch?v=uAOR6ib95kQ"><img class="img-fluid" src="http://assets.stickpng.com/thumbs/58e9196deb97430e819064f6.png" alt="Image" style="width:50px;height:50;">
+              <a href="https://www.youtube.com/watch?v=uAOR6ib95kQ"><img class="img-fluid" src="https://images.vexels.com/media/users/3/130654/isolated/preview/3548484154d27db4992215686b21b3c4-google-icono-de-burbuja-by-vexels.png" alt="Image" style="width:50px;height:50;">
+              <a href="https://www.youtube.com/watch?v=uAOR6ib95kQ"><img class="img-fluid" src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_rss-512.png" alt="Image" style="width:50px;height:50;">
+          </div>
+    
+      </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/
+    -3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
